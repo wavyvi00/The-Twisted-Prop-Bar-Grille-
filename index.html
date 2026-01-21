@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>The Twisted Prop Bar & Grille | Winter Haven, FL</title>
     <meta name="description"
         content="Waterfront dining in Winter Haven, FL. Enjoy burgers, wings, and tropical drinks with a stunning sunset view at The Twisted Prop.">
@@ -24,21 +26,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/images/twisted-prop-logo.png">
+    <link rel="canonical" href="https://thetwistedprop.com/">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Twisted Prop Bar & Grille">
+    <meta name="twitter:description"
+        content="Waterfront dining in Winter Haven, FL. Good vibes, cold drinks, and great food.">
+    <meta name="twitter:image" content="https://thetwistedprop.com/assets/images/hero.jpg">
+
+    <!-- Structured Data - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "The Twisted Prop Bar & Grille",
+        "image": "https://thetwistedprop.com/assets/images/hero.jpg",
+        "url": "https://thetwistedprop.com",
+        "telephone": "+1-863-293-1937",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "615 7th St SW",
+            "addressLocality": "Winter Haven",
+            "addressRegion": "FL",
+            "postalCode": "33880",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.0222,
+            "longitude": -81.7328
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "11:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday"],
+                "opens": "11:00",
+                "closes": "00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "11:00",
+                "closes": "21:00"
+            }
+        ],
+        "servesCuisine": ["American", "Seafood", "Bar Food"],
+        "priceRange": "$$",
+        "sameAs": [
+            "https://www.facebook.com/p/The-Twisted-Prop-Bar-Grille-100063529092185/",
+            "https://www.instagram.com/thetwistedprop/"
+        ]
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="main-header">
+    <header class="main-header" role="banner">
         <div class="container nav-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/twisted-prop-logo.png" alt="The Twisted Prop Logo">
+                <a href="index.html" aria-label="The Twisted Prop - Home">
+                    <img src="assets/images/twisted-prop-logo.png" alt="The Twisted Prop Bar and Grille Logo">
                 </a>
             </div>
-            <nav class="main-nav">
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -47,8 +110,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="hero">
+    <main role="main" id="main-content">
+        <section class="hero" aria-label="Welcome hero section">
             <div class="hero-content container fade-in-up">
                 <h1>Waterfront Dining & Good Vibes</h1>
                 <p>Relax by the water with hearty burgers, fresh seafood, and ice-cold drinks.</p>
@@ -228,15 +291,17 @@
                 <h2 class="section-title text-light">Stay Twisted</h2>
                 <p class="text-light-muted" style="max-width: 600px; margin: 0 auto 2rem;">Join our mailing list for
                     exclusive offers, event updates, and a free appetizer on your birthday!</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
+                <form class="newsletter-form" aria-label="Newsletter signup">
+                    <label for="newsletter-email" class="visually-hidden">Email address</label>
+                    <input type="email" id="newsletter-email" placeholder="Enter your email" required
+                        aria-required="true">
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="fade-in-up">
+    <footer id="contact" class="fade-in-up" role="contentinfo">
         <div class="container">
             <h2 class="section-title" style="color: #F9F7F2; margin-bottom: 2rem;">Contact Us</h2>
             <div class="contact-grid">
@@ -257,8 +322,8 @@
                     </div>
                     <div class="social-links">
                         <a href="https://www.facebook.com/p/The-Twisted-Prop-Bar-Grille-100063529092185/"
-                            target="_blank" class="btn btn-primary">Facebook</a>
-                        <a href="https://www.instagram.com/thetwistedprop/" target="_blank"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">Facebook</a>
+                        <a href="https://www.instagram.com/thetwistedprop/" target="_blank" rel="noopener noreferrer"
                             class="btn btn-primary">Instagram</a>
                     </div>
                 </div>

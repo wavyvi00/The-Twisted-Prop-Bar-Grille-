@@ -1,0 +1,10 @@
+# robots.txt for The Twisted Prop Bar & Grille
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://thetwistedprop.com/sitemap.xml
+
+# Disallow any admin or private directories (if added in future)
+Disallow: /admin/
+Disallow: /private/
