@@ -6,32 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Twisted Prop Bar & Grille | Winter Haven, FL</title>
     <meta name="description"
-        content="Waterfront dining in Winter Haven. Burgers, wings, and seafood with a view. Live music and cold drinks at The Twisted Prop.">
+        content="Waterfront dining in Winter Haven, FL. Enjoy burgers, wings, and tropical drinks with a stunning sunset view at The Twisted Prop.">
+    <meta name="keywords"
+        content="Twisted Prop, Winter Haven, bar and grille, waterfront dining, burgers, wings, sunset view, boat accessible">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thetwistedprop.com/">
+    <meta property="og:title" content="The Twisted Prop Bar & Grille">
+    <meta property="og:description"
+        content="Waterfront dining in Winter Haven, FL. Good vibes, cold drinks, and great food.">
+    <meta property="og:image" content="assets/images/hero.jpg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="assets/images/twisted-prop-logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <header class="main-header">
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/images/logo.jpg" alt="The Twisted Prop Logo"
-                        style="height: 60px; vertical-align: middle;">
+                    <img src="assets/images/twisted-prop-logo.png" alt="The Twisted Prop Logo">
                 </a>
             </div>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -40,7 +49,7 @@
 
     <main>
         <section class="hero">
-            <div class="hero-content container">
+            <div class="hero-content container fade-in-up">
                 <h1>Waterfront Dining & Good Vibes</h1>
                 <p>Relax by the water with hearty burgers, fresh seafood, and ice-cold drinks.</p>
                 <div class="hero-cta">
@@ -49,19 +58,221 @@
             </div>
         </section>
 
-        <section class="intro container">
+        <section class="intro container fade-in-up">
             <div class="intro-text">
                 <h2>Welcome to The Twisted Prop</h2>
                 <p>Located in Winter Haven, we offer a laid-back atmosphere with stunning sunset views. Join us for
                     lunch, dinner, or just a few drinks on the patio.</p>
             </div>
         </section>
+
+        <!-- Twisted Favorites Section -->
+        <section class="favorites container fade-in-up">
+            <h2 class="section-title">Twisted Favorites</h2>
+            <div class="favorites-grid">
+                <div class="fav-card">
+                    <div class="fav-icon">🍔</div>
+                    <h3>The Prop Burger</h3>
+                    <p>Half-pound angus beef, cheddar, bacon, onion ring, and BBQ sauce.</p>
+                </div>
+                <div class="fav-card">
+                    <div class="fav-icon">🍹</div>
+                    <h3>Twisted Rum Punch</h3>
+                    <p>Our signature tropical blend. A vacation in a glass.</p>
+                </div>
+                <div class="fav-card">
+                    <div class="fav-icon">🍗</div>
+                    <h3>Famous Wings</h3>
+                    <p>Crispy, tossed in your choice of 6 house-made sauces.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live at the Prop Section (Dark Theme) -->
+        <section class="events dark-section fade-in-up">
+            <div class="container">
+                <h2 class="section-title text-light">Live at the Prop</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">FAIL</span>
+                            <span class="month">JAN</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Taco Tuesday</h3>
+                            <p>$3 Tacos & $5 Margs all night long.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">FRI</span>
+                            <span class="month">JAN</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Live Band: The Drifters</h3>
+                            <p>Classic Rock covers starting at 7PM.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">SUN</span>
+                            <span class="month">FEB</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Sunday Funday</h3>
+                            <p>Bottomless Mimosas & Bloody Mary Bar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials dark-section fade-in-up">
+            <h2 class="section-title text-light">What People Are Saying</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="quote">"Amazing wings and the deep-fried pickles are a must! The sunset view from the
+                        patio is unbeatable."</p>
+                    <p class="author">- Jennifer M. (Google Review)</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"Great spot for boaters. Friendly staff, cold drinks, and a laid-back atmosphere.
+                        Love the live music!"</p>
+                    <p class="author">- Mark S. (Google Review)</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"Best burger in Winter Haven. The portions are huge and the 'Twisted' sauce is
+                        delicious."</p>
+                    <p class="author">- David R. (Google Review)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Separator 2 -->
+        <div class="parallax-separator sep-1"></div>
+
+        <!-- The Legacy (Story) -->
+        <section class="legacy container fade-in-up">
+            <div class="legacy-content">
+                <div class="legacy-text">
+                    <h2 class="section-title text-left">The Legacy</h2>
+                    <p>Since opening our doors, The Twisted Prop has been about one thing: good times on the water.</p>
+                    <p>What started as a small bait shop has grown into Winter Haven's favorite spot for burgers, beers,
+                        and stories that grow taller with every round.</p>
+                    <a href="about.html" class="btn btn-primary">Read Our Story</a>
+                </div>
+                <div class="legacy-image">
+                    <img src="assets/images/hero.jpg" alt="Vintage photo of the location" style="filter: sepia(0.6);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Twisted Gear (Merch) -->
+        <section class="merch dark-section fade-in-up">
+            <div class="container">
+                <h2 class="section-title text-light">Twisted Gear</h2>
+                <div class="merch-grid">
+                    <div class="merch-item">
+                        <div class="merch-icon">👕</div>
+                        <h3>Prop Tees</h3>
+                        <p class="text-light-muted">Rep the local vibe.</p>
+                    </div>
+                    <div class="merch-item">
+                        <div class="merch-icon">🧢</div>
+                        <h3>Trucker Hats</h3>
+                        <p class="text-light-muted">Keep the sun off.</p>
+                    </div>
+                    <div class="merch-item">
+                        <div class="merch-icon">🍺</div>
+                        <h3>Koozies</h3>
+                        <p class="text-light-muted">Keep it cold.</p>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: var(--spacing-md);">
+                    <a href="#" class="btn btn-primary">Visit Shop</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- The FAQ -->
+        <section class="faq container fade-in-up">
+            <h2 class="section-title">The FAQ</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do you take reservations?</h3>
+                    <p>We operate on a first-come, first-served basis. However, we do take call-aheads for parties of 10
+                        or more!</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are dogs allowed?</h3>
+                    <p>Absolutely! Well-behaved pups are welcome on our outdoor patio. We even have water bowls ready.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you have boat slips?</h3>
+                    <p>Yes, we have 5 slips available for guests arriving by water. Please monitor channel 16 upon
+                        approach.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is there live music every night?</h3>
+                    <p>We feature live local talent every Friday and Saturday night, and Sunday afternoons. Check our
+                        events calendar!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stay Twisted (Newsletter) -->
+        <section class="newsletter dark-section fade-in-up">
+            <div class="container text-center">
+                <h2 class="section-title text-light">Stay Twisted</h2>
+                <p class="text-light-muted" style="max-width: 600px; margin: 0 auto 2rem;">Join our mailing list for
+                    exclusive offers, event updates, and a free appetizer on your birthday!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer id="contact">
+    <footer id="contact" class="fade-in-up">
         <div class="container">
-            <p>&copy; 2026 The Twisted Prop Bar & Grille</p>
-            <p>615 7th St SW, Winter Haven, FL 33880</p>
+            <h2 class="section-title" style="color: #F9F7F2; margin-bottom: 2rem;">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Location</h3>
+                        <p>615 7th St SW<br>Winter Haven, FL 33880</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:+18632931937">(863) 293-1937</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕐 Hours</h3>
+                        <p>Mon-Thu: 11am - 10pm<br>
+                            Fri-Sat: 11am - 12am<br>
+                            Sun: 11am - 9pm</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/The-Twisted-Prop-Bar-Grille-100063529092185/"
+                            target="_blank" class="btn btn-primary">Facebook</a>
+                        <a href="https://www.instagram.com/thetwistedprop/" target="_blank"
+                            class="btn btn-primary">Instagram</a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.1!2d-81.7328!3d28.0222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd39c9d3e0e0e1%3A0x1234567890abcdef!2s615%207th%20St%20SW%2C%20Winter%20Haven%2C%20FL%2033880!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%" height="300" style="border:0; border-radius: 4px;" allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Twisted Prop Bar & Grille. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

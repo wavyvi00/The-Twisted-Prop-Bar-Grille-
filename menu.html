@@ -5,25 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | The Twisted Prop Bar & Grille</title>
+    <meta name="description"
+        content="Browse our menu of twisted favorites. From our signature Prop Burger to our famous wings and tropical cocktails.">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thetwistedprop.com/menu.html">
+    <meta property="og:title" content="Menu - The Twisted Prop Bar & Grille">
+    <meta property="og:description" content="Check out our delicious menu. Burgers, wings, and more.">
+    <meta property="og:image" content="assets/images/hero.jpg">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="assets/images/twisted-prop-logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <header class="main-header">
         <div class="container nav-container">
-            <div class="logo"><a href="index.html">Twisted Prop</a></div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/twisted-prop-logo.png" alt="The Twisted Prop Logo">
+                </a>
+            </div>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html" class="active">Menu</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -31,20 +46,20 @@
     </header>
 
     <main class="menu-page container">
-        <h1 class="page-title">Our Menu</h1>
+        <h1 class="page-title fade-in-up">Our Menu</h1>
 
-        <section class="menu-category">
+        <section class="menu-category fade-in-up">
             <h2>Famous Wings</h2>
             <p class="category-desc">Served with celery and your choice of Blue Cheese or Ranch.</p>
             <div class="menu-grid">
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>10 Wings</h3>
                         <span class="price">$14.99</span>
                     </div>
                     <p>Mild, Medium, Hot, BBQ, Garlic Parmesan, or Twisted Special Sauce.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>20 Wings</h3>
                         <span class="price">$28.99</span>
@@ -54,25 +69,25 @@
             </div>
         </section>
 
-        <section class="menu-category">
+        <section class="menu-category fade-in-up">
             <h2>Burgers & Handhelds</h2>
             <p class="category-desc">Served with fries, tater tots, or coleslaw.</p>
             <div class="menu-grid">
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>The Prop Burger</h3>
                         <span class="price">$13.99</span>
                     </div>
                     <p>Half-pound angus beef, cheddar, bacon, onion ring, and BBQ sauce.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>Classic Cheeseburger</h3>
                         <span class="price">$11.99</span>
                     </div>
                     <p>Lettuce, tomato, onion, pickle, American cheese.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>Buffalo Chicken Sandwich</h3>
                         <span class="price">$12.99</span>
@@ -82,24 +97,24 @@
             </div>
         </section>
 
-        <section class="menu-category">
+        <section class="menu-category fade-in-up">
             <h2>From the Water</h2>
             <div class="menu-grid">
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>Fish & Chips</h3>
                         <span class="price">$15.99</span>
                     </div>
                     <p>Beer-battered cod filets served with fries and tartar sauce.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>Fried Shrimp Basket</h3>
                         <span class="price">$14.99</span>
                     </div>
                     <p>Dozen golden fried shrimp with cocktail sauce.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>Grouper Sandwich</h3>
                         <span class="price">$18.99</span>
@@ -109,17 +124,17 @@
             </div>
         </section>
 
-        <section class="menu-category">
+        <section class="menu-category fade-in-up">
             <h2>Ice Cold Drinks</h2>
             <div class="menu-grid">
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>Draft Beer</h3>
                         <span class="price">$4.00+</span>
                     </div>
                     <p>Ask about our rotating craft taps.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item fade-in-up">
                     <div class="item-header">
                         <h3>Twisted Rum Punch</h3>
                         <span class="price">$8.00</span>
@@ -133,7 +148,12 @@
     <footer id="contact">
         <div class="container">
             <p>&copy; 2026 The Twisted Prop Bar & Grille</p>
-            <p>615 7th St SW, Winter Haven, FL 33880</p>
+            <p>615 7th St SW, Winter Haven, FL 33880 | (863) 293-1937</p>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="https://www.facebook.com/p/The-Twisted-Prop-Bar-Grille-100063529092185/"
+                    target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/thetwistedprop/" target="_blank">Instagram</a>
+            </div>
         </div>
     </footer>
 
